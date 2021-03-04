@@ -1,0 +1,111 @@
+/* 清楚默认样式 */
+* {
+  margin: 0;
+  padding: 0;
+  /* box-sizing: border-box; */
+}
+
+body {
+  font: normal 400 12px/1.5 "Microsoft YaHei", "Heiti SC", tahoma, arial,
+    "Hiragino Sans GB", "\5B8B\4F53", sans-serif;
+  /*根据网站实际背景来设*/
+  /* background-color: #f2f2f2;  */
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+  /* 继承 */
+  font-size: inherit;
+}
+
+a,
+a:hover {
+  text-decoration: none;
+  /*根据网站整体风格，确定颜色*/
+  color: #333333;
+  outline: none; /*超链接有虚线轮廓，用 outline: none 去除。*/
+}
+
+ul li,
+ol li {
+  list-style: none;
+}
+
+strong,
+b {
+  font-weight: normal;
+}
+em,
+i {
+  font-style: normal;
+}
+del {
+  text-decoration: none;
+}
+
+img {
+  /* 图文垂直居中对齐 */
+  vertical-align: middle;
+}
+img,
+fieldset {
+  border: 0; /*图片超链接默认有边框，用 border: none 去除；*/
+}
+
+table {
+  /* 细线边框属性   collapse合并*/
+  border-collapse: collapse;
+}
+
+.fl {
+  float: left;
+}
+
+.fr {
+  float: right;
+}
+
+.fn {
+  float: none;
+}
+
+input,
+textarea,
+button {
+  /* 边框取消 */
+  border: none;
+  /* 清除轮廓线 */
+  outline: none;
+  margin: 0;
+  padding: 0;
+}
+input {
+  font-size: inherit;
+  font-family: inherit;
+  background: none;
+}
+
+textarea {
+  /* 禁止用户重置元素大小 */
+  resize: none;
+  overflow: auto;
+}
+
+/* 清除浮动 */
+.clearfix {
+  *zoom: 1;
+}
+.clearfix::after,
+.clearfix::before {
+  content: "";
+  display: block;
+  clear: both;
+  height: 0;
+  font-size: 0;
+  line-height: 0;
+  overflow: hidden;
+}
